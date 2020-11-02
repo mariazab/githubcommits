@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Github Commits</string>
+    <string name="main_activity_title">Recent commits to android/platform_build repository</string>
+    <string name="date">Date:</string>
+    <string name="author">Author:</string>
+    <string name="commit_details">Commit details</string>
+    <string name="committer">Committer:</string>
+    <string name="message">Message:</string>
+    <string name="author_s_avatar">Author\'s avatar</string>
+    <string name="go_to_url_btn">Go to URL</string>
+    <string name="no_internet">No internet connection, please try again later.</string>
+    <string name="error">Error loading data, please try again later.</string>
+</resources>

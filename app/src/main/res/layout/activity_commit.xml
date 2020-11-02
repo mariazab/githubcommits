@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="10dp"
+    tools:context=".CommitActivity">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextAppearance.MdcTypographyStyles.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/commit_details" />
+
+    <Button
+        android:id="@+id/go_to_website"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="@string/go_to_url_btn" />
+
+    <TextView
+        android:id="@+id/date_title_textview"
+        style="@style/TextAppearance.MdcTypographyStyles.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="10dp"
+        android:text="@string/date" />
+
+    <TextView
+        android:id="@+id/date_textview"
+        style="@style/TextAppearance.MdcTypographyStyles.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/date_title_textview"
+        tools:text="20.10.2020" />
+
+
+    <TextView
+        android:id="@+id/author_title_textview"
+        style="@style/TextAppearance.MdcTypographyStyles.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_title_textview"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/author" />
+
+    <TextView
+        android:id="@+id/author_name_textview"
+        style="@style/TextAppearance.MdcTypographyStyles.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_textview"
+        android:layout_marginHorizontal="5dp"
+        android:layout_toEndOf="@id/author_avatar_imageview"
+        tools:text="John Doe" />
+
+    <ImageView
+        android:id="@+id/author_avatar_imageview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/date_textview"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@id/author_title_textview"
+        android:contentDescription="@string/author_s_avatar"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/author_email_textview"
+        style="@style/TextAppearance.MdcTypographyStyles.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/author_name_textview"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/author_avatar_imageview"
+        tools:text="jdoe@gmail.com" />
+
+
+    <TextView
+        android:id="@+id/committer_title_textview"
+        style="@style/TextAppearance.MdcTypographyStyles.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/author_email_textview"
+        android:layout_marginVertical="10dp"
+        android:text="@string/committer" />
+
+    <TextView
+        android:id="@+id/committer_name_textview"
+        style="@style/TextAppearance.MdcTypographyStyles.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/author_email_textview"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="10dp"
+        android:layout_toEndOf="@+id/committer_title_textview"
+        tools:text="Matt Smith" />
+
+    <TextView
+        android:id="@+id/message_title_textview"
+        style="@style/TextAppearance.MdcTypographyStyles.Subtitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/committer_title_textview"
+        android:layout_marginBottom="5dp"
+        android:text="@string/message" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_title_textview"
+        android:background="@drawable/border"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/message_textview"
+            style="@style/TextAppearance.MdcTypographyStyles.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="First commit" />
+
+    </ScrollView>
+
+</RelativeLayout>
